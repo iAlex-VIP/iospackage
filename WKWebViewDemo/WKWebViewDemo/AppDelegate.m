@@ -77,7 +77,7 @@
 
 -(void)UMpushuSetting:(NSDictionary *)launchOptions{
     
-    [UMessage startWithAppkey:@"5bc4489df1f556db15000098" launchOptions:launchOptions httpsEnable:YES ];
+    [UMessage startWithAppkey:@"5bc47a74f1f5568c4d000190" launchOptions:launchOptions httpsEnable:YES ];
     [UMessage openDebugMode:YES];
     //    UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     //    [UMessage addLaunchMessageWithWindow:self.window finishViewController:[board instantiateInitialViewController]];

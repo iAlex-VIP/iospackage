@@ -709,7 +709,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WKWebViewDemo/UMessage_Sdk_1.5.0a",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.lhc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.sjcp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -734,7 +734,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WKWebViewDemo/UMessage_Sdk_1.5.0a",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.lhc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.sjcp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

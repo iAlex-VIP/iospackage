@@ -24,7 +24,7 @@
     if (self) {
         buttonsArray = [[NSMutableArray alloc] init];
         [self setBackgroundColor:[UIColor whiteColor]];
-        [self createSubViews];
+       // [self createSubViews];
     }
     return self;
 }

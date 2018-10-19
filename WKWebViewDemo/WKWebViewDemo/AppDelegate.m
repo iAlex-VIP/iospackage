@@ -11,7 +11,7 @@
 #import "SystemRootViewController.h"
 #import "UMessage.h"
 #import <UserNotifications/UserNotifications.h>
-
+#import "UIDevice+DeviceModel.h"
 @interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
@@ -20,6 +20,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    
+  
+    
+    
+    
     
     self.isFirstLoad = YES;
     [self startNetworkMonitoring];

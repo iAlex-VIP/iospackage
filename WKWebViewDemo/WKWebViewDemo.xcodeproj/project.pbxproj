@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C391ED02174818200E01487 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C391ECF2174818200E01487 /* Launch Screen.storyboard */; };
+		1C4AA5582179B6CF006F57F4 /* UIDevice+DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4AA5572179B6CF006F57F4 /* UIDevice+DeviceModel.m */; };
 		1C75252A216F453600D8A0CF /* libUMessage_Sdk_1.5.0a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C752528216F453600D8A0CF /* libUMessage_Sdk_1.5.0a.a */; };
 		8C300234215E173C009B1476 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C300233215E173C009B1476 /* AppDelegate.m */; };
 		8C30023C215E173E009B1476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C30023B215E173E009B1476 /* Assets.xcassets */; };
@@ -69,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		1C391ECF2174818200E01487 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1C4AA5562179B6CF006F57F4 /* UIDevice+DeviceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DeviceModel.h"; sourceTree = "<group>"; };
+		1C4AA5572179B6CF006F57F4 /* UIDevice+DeviceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DeviceModel.m"; sourceTree = "<group>"; };
 		1C752526216F44EF00D8A0CF /* WKWebViewDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WKWebViewDemo.entitlements; sourceTree = "<group>"; };
 		1C752528216F453600D8A0CF /* libUMessage_Sdk_1.5.0a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.5.0a.a; sourceTree = "<group>"; };
 		1C752529216F453600D8A0CF /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
@@ -431,6 +434,8 @@
 				8CA57435215E508900FCEDCD /* SystemContentViewController.m */,
 				8CA57437215E50A200FCEDCD /* SystemNavigationViewController.h */,
 				8CA57438215E50A200FCEDCD /* SystemNavigationViewController.m */,
+				1C4AA5562179B6CF006F57F4 /* UIDevice+DeviceModel.h */,
+				1C4AA5572179B6CF006F57F4 /* UIDevice+DeviceModel.m */,
 			);
 			path = SystemViewControllers;
 			sourceTree = "<group>";
@@ -555,6 +560,7 @@
 				8CA5740B215E49A700FCEDCD /* UIImage+GIF.m in Sources */,
 				8CA57414215E49A700FCEDCD /* UIButton+WebCache.m in Sources */,
 				8CA57433215E4F3600FCEDCD /* SystemRootViewController.m in Sources */,
+				1C4AA5582179B6CF006F57F4 /* UIDevice+DeviceModel.m in Sources */,
 				8CA573EE215E49A700FCEDCD /* SVProgressAnimatedView.m in Sources */,
 				8CA57411215E49A700FCEDCD /* NSData+ImageContentType.m in Sources */,
 				8CA57413215E49A700FCEDCD /* UIView+WebCacheOperation.m in Sources */,
@@ -709,7 +715,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WKWebViewDemo/UMessage_Sdk_1.5.0a",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.kc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.pc8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -734,7 +740,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WKWebViewDemo/UMessage_Sdk_1.5.0a",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.kc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.pc8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -27,6 +27,10 @@
     [self.view addSubview:backgroundImageView];
     self.view.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:85.0/255.0 blue:84.0/255.0 alpha:1];
     backgroundImageView.backgroundColor =  [UIColor colorWithRed:220/255.0 green:59/255.0 blue:64/255.0 alpha:1];
+    
+    
+   
+    
 }
 
 - (BOOL)prefersStatusBarHidden{
@@ -37,7 +41,7 @@
     [super viewDidAppear:animated];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         SystemContentViewController *rootViewController = [[SystemContentViewController alloc] init];
-        rootViewController.urlString = @"http://6kcai.cc";
+        rootViewController.urlString = @"http://paicai.me";
         SystemNavigationViewController *nav = [[SystemNavigationViewController alloc] initWithRootViewController:rootViewController];
         nav.deviceMask = UIInterfaceOrientationMaskAll;
         [AppDelegate sharedDelegate].window.rootViewController = nav;

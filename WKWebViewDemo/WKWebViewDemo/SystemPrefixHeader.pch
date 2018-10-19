@@ -29,12 +29,26 @@
 #define ConfigWidth  ([UIScreen mainScreen].bounds.size.width)
 #define ConfigHeight ([UIScreen mainScreen].bounds.size.height)
 
+
+
+
+
+
+
 #define iPhoneX (CGSizeEqualToSize([UIScreen mainScreen].bounds.size,CGSizeMake(375, 812)) || CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(812, 375)))
+#define iPhoneXS (CGSizeEqualToSize([UIScreen mainScreen].bounds.size,CGSizeMake(375, 812)) || CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(812, 375)))
+#define iPhoneXR (CGSizeEqualToSize([UIScreen mainScreen].bounds.size,CGSizeMake(414, 896)) || CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(896, 414)))
+#define iPhoneXSM (CGSizeEqualToSize([UIScreen mainScreen].bounds.size,CGSizeMake(375, 812)) || CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(896, 414)))
+
+#define iPhone   [UIScreen mainScreen].bounds.size.height=667 || [UIScreen mainScreen].bounds.size.height=736
 
 #define iPhoneXSafeArea       24
 #define ConfigTabBarHeight    ((iPhoneX)?83:49)
 #define hConfigNaviBarHeight  ((iPhoneX)?88:64)
 #define cStatusBarHeight      ((iPhoneX)?44:20)
+//#define cSTabH                 ((iPhoneX)?20:0)
+
+
 #define cNaviBarABXHeight     (hConfigNaviBarHeight - cStatusBarHeight)
 #define DeviceIsPortrait      [SharedSystemModel deviceIsPortrait]
 

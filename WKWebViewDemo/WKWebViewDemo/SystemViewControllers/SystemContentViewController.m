@@ -11,9 +11,9 @@
 #import "NewestMainPageFooterView.h"
 #import "MainPageProgressView.h"
 #import "SystemNetworkDisconnectView.h"
-
+#import "UIDevice+DeviceModel.h"
 #define kProgressHeight     6.0f
-
+#define iPhoneType [UIDevice_DeviceModel  deviceModel]
 @interface SystemContentViewController ()<WKUIDelegate,WKNavigationDelegate,UIGestureRecognizerDelegate,NewestMainPageFooterViewDelegate>
 
 {
@@ -47,16 +47,29 @@
     webViewController.processPool = processPool;
     webViewController.allowsInlineMediaPlayback = YES;
     webViewController.userContentController = userContentController;
+    NSLog(@"oooooooo%@",iPhoneType);
+    if ([iPhoneType isEqualToString:@"iPhone X"] || [iPhoneType isEqualToString:@"iPhone XS"] ) {
+        
+         kWKWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, cStatusBarHeight, self.view.frame.size.width, ConfigHeight - cStatusBarHeight - 20) configuration:webViewController];
+        
+    }else if ([iPhoneType isEqualToString:@"iPhone XR"] || [iPhoneType isEqualToString:@"iPhone XSM"])
+    {
+           kWKWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, cStatusBarHeight, self.view.frame.size.width, ConfigHeight - cStatusBarHeight - 40) configuration:webViewController];
+             NSLog(@"===============>>>>>>>>>>>>>>>>>>>>%@",[UIDevice_DeviceModel  deviceModel]);
+    }else
+    {
+        kWKWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, cStatusBarHeight, self.view.frame.size.width, ConfigHeight - cStatusBarHeight) configuration:webViewController];
+    }
     
-    kWKWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, cStatusBarHeight, self.view.frame.size.width, ConfigHeight - cStatusBarHeight - contentBottomView.frame.size.height) configuration:webViewController];
+   
     kWKWebView.UIDelegate = self;
     kWKWebView.navigationDelegate = self;
     kWKWebView.allowsBackForwardNavigationGestures = YES;
     kWKWebView.allowsLinkPreview = NO;
     
-    [self.view addSubview:kWKWebView];
-    [self.view addSubview:contentBottomView];
     
+    [self.view addSubview:contentBottomView];
+    [self.view addSubview:kWKWebView];
     if (@available(iOS 11,*)) {
         kWKWebView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
@@ -233,7 +246,7 @@
         _progressView.frame = CGRectMake(-kProgressHeight, originY, _progressView.frame.size.width, kProgressHeight);
     }
     
-    kWKWebView.frame = CGRectMake(0, originY, ConfigWidth, height);
+    //kWKWebView.frame = CGRectMake(0, originY, ConfigWidth, height);
     kWKWebView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     kWKWebView.scrollView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0);
 }

@@ -32,7 +32,7 @@ NSString *const Device_iPhoneXR = @"iPhone XR";
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString* code = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-   
+    NSLog(@"======================%@",code);
     static NSDictionary* deviceNamesByCode = nil;
     if (!deviceNamesByCode) {
         deviceNamesByCode = @{
@@ -57,7 +57,7 @@ NSString *const Device_iPhoneXR = @"iPhone XR";
                               @"iPhone10,2" : Device_iPhone8plus,
                               @"iPhone10,3" : Device_iPhoneX,
                               @"iPhone11,2" : Device_iPhoneXS,
-                              @"iPhone11,3" : Device_iPhoneXSM,
+                              @"iPhone11,6" : Device_iPhoneXSM,
                               @"iPhone11,1" : Device_iPhoneXR
                               
                               };

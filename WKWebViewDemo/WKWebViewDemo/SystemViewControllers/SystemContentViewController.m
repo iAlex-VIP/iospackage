@@ -47,7 +47,7 @@
     webViewController.processPool = processPool;
     webViewController.allowsInlineMediaPlayback = YES;
     webViewController.userContentController = userContentController;
-    NSLog(@"oooooooo%@",iPhoneType);
+    NSLog(@"》〉》〉》〉》〉》〉》〉》〉》〉》〉》〉》〉》〉》〉》〉oooooooo%@",iPhoneType);
     if ([iPhoneType isEqualToString:@"iPhone X"] || [iPhoneType isEqualToString:@"iPhone XS"] ) {
         
          kWKWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, cStatusBarHeight, self.view.frame.size.width, ConfigHeight - cStatusBarHeight - 20) configuration:webViewController];
@@ -93,7 +93,7 @@
                 self.progressView.hidden = YES;
                 self.progressView.frame  = CGRectMake(-kProgressHeight, self.progressView.frame.origin.y, kProgressHeight, kProgressHeight);
             }else{
-                self.progressView.hidden = NO;
+                self.progressView.hidden = YES;
                 [UIView animateWithDuration:0.2 animations:^{
                     self.progressView.frame = CGRectMake(-kProgressHeight, self.progressView.frame.origin.y, (ConfigWidth+kProgressHeight)*newValue, kProgressHeight);
                 }];

@@ -12,6 +12,7 @@
 #import "UMessage.h"
 #import <UserNotifications/UserNotifications.h>
 #import "UIDevice+DeviceModel.h"
+#define UMKey @"5bcd69baf1f5566dd700001a"
 @interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
@@ -84,7 +85,7 @@
 
 -(void)UMpushuSetting:(NSDictionary *)launchOptions{
     
-    [UMessage startWithAppkey:@"5ba9f7c3b465f526a3000682" launchOptions:launchOptions httpsEnable:YES ];
+    [UMessage startWithAppkey:UMKey launchOptions:launchOptions httpsEnable:YES ];
     [UMessage openDebugMode:YES];
     //    UIStoryboard *board=[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     //    [UMessage addLaunchMessageWithWindow:self.window finishViewController:[board instantiateInitialViewController]];

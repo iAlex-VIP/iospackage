@@ -482,10 +482,10 @@
 						CreatedOnToolsVersion = 9.4;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -700,9 +700,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WKWebViewDemo/WKWebViewDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZW4Y4J7J82;
+				DEVELOPMENT_TEAM = XN5B6YQXNC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/${PROJECT_NAME}/SystemPrefixHeader.pch";
 				INFOPLIST_FILE = WKWebViewDemo/Info.plist;
@@ -715,7 +714,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WKWebViewDemo/UMessage_Sdk_1.5.0a",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.009cp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jckj.1236cp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -725,9 +724,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WKWebViewDemo/WKWebViewDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZW4Y4J7J82;
+				DEVELOPMENT_TEAM = XN5B6YQXNC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/${PROJECT_NAME}/SystemPrefixHeader.pch";
 				INFOPLIST_FILE = WKWebViewDemo/Info.plist;
@@ -740,7 +738,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WKWebViewDemo/UMessage_Sdk_1.5.0a",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leynew.009cp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jckj.1236cp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

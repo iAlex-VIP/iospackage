@@ -41,7 +41,7 @@
     [super viewDidAppear:animated];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         SystemContentViewController *rootViewController = [[SystemContentViewController alloc] init];
-        rootViewController.urlString = @"http://m.009cp.net";
+        rootViewController.urlString = @"http://1236p.com";
         SystemNavigationViewController *nav = [[SystemNavigationViewController alloc] initWithRootViewController:rootViewController];
         nav.deviceMask = UIInterfaceOrientationMaskAll;
         [AppDelegate sharedDelegate].window.rootViewController = nav;

@@ -31,7 +31,7 @@
     
     self.isFirstLoad = YES;
     [self startNetworkMonitoring];
-    [self UMpushuSetting:launchOptions];
+    //[self UMpushuSetting:launchOptions];
     SystemRootViewController *rootViewController = [[SystemRootViewController alloc] init];
     SystemNavigationViewController *nav = [[SystemNavigationViewController alloc] initWithRootViewController:rootViewController];
     nav.deviceMask = UIInterfaceOrientationMaskPortrait;
